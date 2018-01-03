@@ -1,5 +1,17 @@
 import React from "react";
+import Layout from "../components/Layout";
+import { List, ListItem } from "material-ui/List";
+import ActionInfo from "material-ui/svg-icons/action/info";
 
-const page = () => <div>Welcome to next.js!</div>;
+const Index = () => (
+  <Layout>
+    <List>
+      <ListItem primaryText="Item 1" rightIcon={<ActionInfo />} />
+      <ListItem primaryText="Item 2" rightIcon={<ActionInfo />} />
+      <ListItem primaryText="Item 3" rightIcon={<ActionInfo />} />
+      <ListItem primaryText="Item 4" rightIcon={<ActionInfo />} />
+    </List>
+  </Layout>
+);
 
-export default page;
+export default Index;
