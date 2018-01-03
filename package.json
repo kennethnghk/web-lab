@@ -13,7 +13,6 @@
   "dependencies": {
     "babel-plugin-inline-dotenv": "^1.1.2",
     "husky": "^0.14.3",
-    "material-ui": "latest",
     "next": "^4.2.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
