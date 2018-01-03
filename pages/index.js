@@ -3,8 +3,10 @@ import styled from "styled-components";
 import ThemeProvider from "react-toolbox/lib/ThemeProvider";
 import Button from "react-toolbox/lib/button/Button";
 import AppBar from "react-toolbox/lib/app_bar/AppBar";
-import theme from "../static/theme";
+import theme from "styles/theme";
 import Head from "next/head";
+
+import css from "styles/theme.css";
 
 const Title = styled.h1`
   font-size: 1.5em;
@@ -17,7 +19,7 @@ const page = () => (
     <Title>This is title</Title>
     <div>Welcome to next.js!</div>
     <Head>
-      <link href="/static/theme.css" rel="stylesheet" />
+      <style dangerouslySetInnerHTML={{ __html: css }} />
     </Head>
     <ThemeProvider theme={theme}>
       <AppBar>
