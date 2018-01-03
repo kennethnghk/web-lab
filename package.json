@@ -13,7 +13,7 @@
     "./static/scss/**/*.scss": ["stylelint --fix", "git add"]
   },
   "reactToolbox": {
-    "include": ["BUTTON", "DATE_PICKER"],
+    "include": ["APP_BAR", "LIST"],
     "customProperties": {
       "animation-duration": "0.3s",
       "color-accent": "var(--palette-pink-a200)",
