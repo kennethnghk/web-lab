@@ -1,20 +1,10 @@
 import React from "react";
-import styled from "styled-components";
-import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
-import RaisedButton from "material-ui/RaisedButton";
+import Layout from "../components/Layout";
 
-const Title = styled.h1`
-  font-size: 1.5em;
-  text-align: center;
-  color: palevioletred;
-`;
-
-const page = () => (
-  <MuiThemeProvider>
-    <Title>This is title</Title>
+const Index = () => (
+  <Layout>
     <div>Welcome to next.js!</div>
-    <RaisedButton label="Default" />
-  </MuiThemeProvider>
+  </Layout>
 );
 
-export default page;
+export default Index;
