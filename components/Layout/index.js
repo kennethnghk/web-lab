@@ -15,6 +15,10 @@ const GithubIcon = () => (
   </svg>
 );
 
+const onRightIconClick = () => {
+  window.document.location.href = "https://github.com/kennethnghk/web-lab";
+};
+
 const Layout = props => (
   <div>
     <Head>
@@ -22,7 +26,11 @@ const Layout = props => (
     </Head>
     <ThemeProvider theme={theme}>
       <div>
-        <AppBar title="Web-lab" rightIcon={<GithubIcon />} />
+        <AppBar
+          title="Web-lab"
+          rightIcon={<GithubIcon />}
+          onRightIconClick={onRightIconClick}
+        />
         {props.children}
       </div>
     </ThemeProvider>
