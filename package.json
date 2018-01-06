@@ -3,10 +3,11 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "precommit": "lint-staged"
+    "flow": "flow --color always",
+    "precommit": "lint-staged && npm run flow"
   },
   "lint-staged": {
-    "**/*.js": ["prettier --write", "eslint --fix", "git add"],
+    "**/*.js": ["prettier --parser flow --write", "eslint --fix", "git add"],
     "**/*.json": ["prettier --write", "git add"],
     "./static/scss/**/*.scss": ["stylelint --fix", "git add"]
   },
