@@ -6,7 +6,7 @@ import Layout from "../components/Layout";
 
 const FEED_URL = "https://www.instagram.com/euro2020/?__a=1";
 
-const Feed = props => (
+const InstaFeed = props => (
   <Layout>
     {props.items.map((item, index) => (
       <Card style={{ margin: "0 0 10px 0" }} key={index}>
@@ -23,7 +23,7 @@ const Feed = props => (
   </Layout>
 );
 
-Feed.getInitialProps = async () => {
+InstaFeed.getInitialProps = async () => {
   const res = await fetch(FEED_URL);
   const json = await res.json();
   return {
@@ -32,9 +32,9 @@ Feed.getInitialProps = async () => {
   };
 };
 
-Feed.propTypes = {
+InstaFeed.propTypes = {
   user: PropTypes.object,
   items: PropTypes.array
 };
 
-export default Feed;
+export default InstaFeed;

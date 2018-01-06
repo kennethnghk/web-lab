@@ -7,8 +7,8 @@ import Layout from "../components/Layout";
 const Index = () => (
   <Layout>
     <List>
-      <Link href="/feed">
-        <ListItem primaryText="Item 1" rightIcon={<ActionInfo />} />
+      <Link href="/instafeed">
+        <ListItem primaryText="InstaFeed" rightIcon={<ActionInfo />} />
       </Link>
     </List>
   </Layout>
