@@ -4,7 +4,7 @@ import "isomorphic-unfetch";
 import { Card, CardHeader, CardMedia, CardText } from "material-ui/Card";
 import Layout from "../components/Layout";
 
-const FEED_URL = "https://www.instagram.com/euro2020/?__a=1";
+const FEED_URL = "https://www.instagram.com/aragakiyui_fanspage/?__a=1";
 const SCROLL_OFFSET = 2000;
 
 class InstaFeed extends React.Component {
