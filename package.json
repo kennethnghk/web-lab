@@ -1,8 +1,8 @@
 {
   "scripts": {
-    "dev": "next",
+    "dev": "node server.js",
     "build": "next build",
-    "start": "next start",
+    "start": "NODE_ENV=production node server.js",
     "flow": "flow --color always",
     "precommit": "lint-staged && npm run flow"
   },
@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "babel-plugin-inline-dotenv": "^1.1.2",
+    "express": "^4.16.2",
     "husky": "^0.14.3",
     "isomorphic-unfetch": "^2.0.0",
     "material-ui": "latest",
